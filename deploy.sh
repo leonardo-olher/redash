@@ -10,7 +10,7 @@ APP_SERVICES="server adhoc_worker scheduled_worker scheduler worker nginx"
 
 echo "==> Pulling latest code..."
 cd "$REPO_DIR"
-git pull origin main
+git pull origin master
 
 echo "==> Building app image..."
 COMPOSE_FILE="$COMPOSE_FILE" docker compose build $APP_SERVICES
